@@ -1,8 +1,8 @@
 #include "Led.h"
 
-#define led 25
+#define ledPin 25
 
-Led myLed(int(led));
+Led led(int(ledPin));
 
 void setup() {
   // The setup is made in the class
@@ -10,7 +10,7 @@ void setup() {
 }
 
 void loop() {
-  myLed.blink(500);
+  led.blink(500);
   // setPinMode is a private method
   //myLed.setPinMode();
 }
